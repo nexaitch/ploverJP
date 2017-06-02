@@ -4,6 +4,7 @@
 
 1. Description
 2. Algorithmic Generation of Output from Strokes
+3. Details
 
 ## Description
 
@@ -11,7 +12,7 @@
 modified to make parsing / generation of text easier, i.e.
 
 - "tyou" instead of "chou" / "chō" / "chô", and
-- "zinn" instead of "jin"
+- "zinn" instead of "jin".
 
 The traditional steno layout is divided into 4 sections:
 
@@ -130,3 +131,8 @@ Store 8 dictionaries:
  3. Check if it matches a verb brief.
 	If so, do the same as the above step except with dictionary 4. 
 5. If you still do not have any match, it is an invalid stroke and you should just output the stroke text.
+6. Otherwise, apply any orthographic rules (conversion to a nicer romanisation; making things nicer for your ime etc) and output your text.
+
+## Details
+
+Actual tables for each of the clusters to be done soon.
