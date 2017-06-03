@@ -120,15 +120,15 @@ Store 8 dictionaries:
 1. Split the chord up into its respective sections.
 2. Check if **lhs+vowel** chord is valid.
 3. If it is:
-  1. Check if the **godan** chord is empty;
+   1. Check if the **godan** chord is empty;
 	if so, check dictionary 1, 2, and 5 for the corresponding endings and sum up all the sections.
-  2. Otherwise, check dictionary 1, 2, 3, and 4 instead and sum up all the sections.
+   2. Otherwise, check dictionary 1, 2, 3, and 4 instead and sum up all the sections.
 4. Otherwise it is a brief. Then:
-  1. Check if the chord matches an uninflectable brief.
+   1. Check if the chord matches an uninflectable brief.
 	If so, take the brief text.
-  2. Check if the **lhs+vowel+godan** chord matches a nonverb brief.
+   2. Check if the **lhs+vowel+godan** chord matches a nonverb brief.
 	If so, take the brief text plus the corresponding **rhs** ending in dictionary 5.
-  3. Check if it matches a verb brief.
+   3. Check if it matches a verb brief.
 	If so, do the same as the above step except with dictionary 4. 
 5. If you still do not have any match, it is an invalid stroke and you should just output the stroke text.
 6. Otherwise, apply any orthographic rules (conversion to a nicer romanisation; making things nicer for your ime etc) and output your text.
